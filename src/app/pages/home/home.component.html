@@ -1,15 +1,38 @@
 <header>
-  <app-menu-bar></app-menu-bar>
+  <app-menu-bar
+    [menuItems]="[
+      { name: 'Linkedin', url: 'https://www.linkedin.com' },
+      { name: 'Github', url: 'https://github.com' },
+      { name: 'Youtube', url: 'https://www.youtube.com' }
+    ]"
+  ></app-menu-bar>
 </header>
 
-<app-menu-title> </app-menu-title>
+<app-menu-title blogTitle="THE BLOG"></app-menu-title>
+
 <div class="container__articles">
   <div class="articles__main">
-    <app-big-card></app-big-card>
+    <app-big-card
+      photoCover="https://s3-alpha.figma.com/hub/file/4093188630/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png"
+      cardTitle="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dictum odio. Praesent pretium semper tortor, in lobortis elit cursus nec. Nullam vitae placerat quam. Etiam fermentum mauris diam, in vehicula nunc elementum nec. Etiam sit amet risus consequat, auctor dui id, hendrerit orci."
+    ></app-big-card>
   </div>
+
   <div class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+      photoCover="https://static.vecteezy.com/system/resources/thumbnails/008/695/917/small_2x/no-image-available-icon-simple-two-colors-template-for-no-image-or-picture-coming-soon-and-placeholder-illustration-isolated-on-white-background-vector.jpg"
+      cardTitle="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    ></app-small-card>
+
+    <app-small-card
+      photoCover="https://static.vecteezy.com/system/resources/thumbnails/008/695/917/small_2x/no-image-available-icon-simple-two-colors-template-for-no-image-or-picture-coming-soon-and-placeholder-illustration-isolated-on-white-background-vector.jpg"
+      cardTitle="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    ></app-small-card>
+
+    <app-small-card
+      photoCover="https://static.vecteezy.com/system/resources/thumbnails/008/695/917/small_2x/no-image-available-icon-simple-two-colors-template-for-no-image-or-picture-coming-soon-and-placeholder-illustration-isolated-on-white-background-vector.jpg"
+      cardTitle="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    ></app-small-card>
   </div>
 </div>

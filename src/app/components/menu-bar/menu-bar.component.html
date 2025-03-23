@@ -1,9 +1,14 @@
 <div class="container__menu-bar">
   <ul>
-    <li><a href="">Linkedin</a></li>
-    <li><span>•</span></li>
-    <li><a href="">Github</a></li>
-    <li><span>•</span></li>
-    <li><a href="">Youtube</a></li>
+    @for (item of menuItems; track item) {
+    <li>
+      <a [href]="item.url">{{ item.name }}</a>
+    </li>
+    <li>
+      @if (item !== menuItems[menuItems.length - 1]) {
+      <span>•</span>
+      }
+    </li>
+    }
   </ul>
 </div>
