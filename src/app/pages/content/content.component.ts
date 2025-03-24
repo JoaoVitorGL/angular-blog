@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { OnInit } from '@angular/core';
+import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-content',
@@ -9,16 +10,23 @@ import { OnInit } from '@angular/core';
   styleUrl: './content.component.css',
 })
 export class ContentComponent implements OnInit {
-  photoCover: string =
-    'https://s3-alpha.figma.com/hub/file/4093188630/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png';
-  contentTitle: string =
-    'There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...';
-  contentDescription: string =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat neque finibus, fermentum lacus eget, congue mauris.';
+  photoCover: string = '';
+  contentTitle: string = '';
+  contentDescription: string = '';
+  private id: string | null = '0';
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((value) => console.log(value.get('id')));
+    this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
+    this.setValuesToComponent(this.id);
+  }
+
+  setValuesToComponent(id: string | null) {
+    const result = dataFake.filter((article) => article.id == id)[0];
+
+    this.contentTitle = result.title;
+    this.contentDescription = result.description;
+    this.photoCover = result.photoCover;
   }
 }
