@@ -38,4 +38,4 @@ npm install
 ng serve
 
 # Acesse em
-http://localhost:420
+http://localhost:4200
