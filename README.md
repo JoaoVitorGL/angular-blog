@@ -22,6 +22,8 @@ Projeto front-end que implementa um template para um blog. Criado para o desafio
 - Responsividade
 - Página inicial e página de post detalhado
 
+---
+
 ## 📦 Como rodar o projeto localmente
 
 ```bash
