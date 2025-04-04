@@ -29,7 +29,7 @@ Projeto front-end que implementa um template para um blog. Criado para o desafio
 git clone https://github.com/JoaoVitorGL/angular-blog.git
 
 # Acesse a pasta do projeto
-cd seu-repo
+cd angular-blog
 
 # Instale as dependências
 npm install
