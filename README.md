@@ -6,7 +6,7 @@ Projeto front-end que implementa um template para um blog. Criado para o desafio
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias
 
 - TypeScript
 - Angular
