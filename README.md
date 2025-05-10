@@ -2,11 +2,11 @@
   Blog Template
 </h1>
 
-Projeto front-end que implementa um template para um blog. Criado para o desafio de projeto do bootcamp **decola tech Avanade 2025** (Criando um Blog com Angular).
+Template de blog responsivo desenvolvido em Angular e TypeScript, com visualização de posts e navegação entre páginas.
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - TypeScript
 - Angular
@@ -15,7 +15,7 @@ Projeto front-end que implementa um template para um blog. Criado para o desafio
 
 ---
 
-## 💻 Funcionalidades
+## Funcionalidades
 
 - Visualização de posts do blog
 - Navegação entre páginas (roteamento)
@@ -24,7 +24,7 @@ Projeto front-end que implementa um template para um blog. Criado para o desafio
 
 ---
 
-## 📦 Como rodar o projeto localmente
+## Como rodar o projeto localmente
 
 ```bash
 # Clone o repositório
